@@ -1,0 +1,345 @@
+show collections
+courses
+roles
+users
+> db.courses.find().pretty()
+{
+        "_id" : ObjectId("6929e12ce2d1898195b848f4"),
+        "codigo" : "TEL354",
+        "nombre" : "Redes Definidas por Software",
+        "estado" : "DICTANDO",
+        "servicios_permitidos" : [
+                {
+                        "nombre" : "ssh",
+                        "protocolo" : "tcp",
+                        "puerto" : 22
+                },
+                {
+                        "nombre" : "web",
+                        "protocolo" : "tcp",
+                        "puerto" : 80
+                },
+                {
+                        "nombre" : "dns",
+                        "protocolo" : "udp",
+                        "puerto" : 53
+                }
+        ],
+        "servidores" : [
+                {
+                        "nombre" : "Servidor1",
+                        "ip" : "10.0.0.6",
+                        "servicios_permitidos" : [
+                                {
+                                        "nombre" : "ssh",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 22
+                                },
+                                {
+                                        "nombre" : "web",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 80
+                                },
+                                {
+                                        "nombre" : "dns",
+                                        "protocolo" : "udp",
+                                        "puerto" : 53
+                                }
+                        ]
+                }
+        ],
+        "alumnos" : [
+                "20206311",
+                "20206464",
+                "20202020"
+        ],
+        "profesores" : [
+                "20213776"
+        ]
+}
+{
+        "_id" : ObjectId("6929e12ce2d1898195b848f5"),
+        "codigo" : "TEL123",
+        "nombre" : "Telepathy and Telekinetics",
+        "estado" : "INACTIVO",
+        "servicios_permitidos" : [
+                {
+                        "nombre" : "web",
+                        "protocolo" : "tcp",
+                        "puerto" : 80
+                },
+                {
+                        "nombre" : "dns",
+                        "protocolo" : "udp",
+                        "puerto" : 53
+                }
+        ],
+        "servidores" : [
+                {
+                        "nombre" : "Servidor1",
+                        "ip" : "10.0.0.6",
+                        "servicios_permitidos" : [
+                                {
+                                        "nombre" : "web",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 80
+                                },
+                                {
+                                        "nombre" : "dns",
+                                        "protocolo" : "udp",
+                                        "puerto" : 53
+                                }
+                        ]
+                }
+        ],
+        "alumnos" : [ ],
+        "profesores" : [
+                "20213333"
+        ]
+}
+{
+        "_id" : ObjectId("6929e12ce2d1898195b848f6"),
+        "codigo" : "DER205",
+        "nombre" : "Derecho de Filosofia",
+        "estado" : "DICTANDO",
+        "servicios_permitidos" : [
+                {
+                        "nombre" : "web",
+                        "protocolo" : "tcp",
+                        "puerto" : 80
+                },
+                {
+                        "nombre" : "dns",
+                        "protocolo" : "udp",
+                        "puerto" : 53
+                },
+                {
+                        "nombre" : "smtp",
+                        "protocolo" : "tcp",
+                        "puerto" : 25
+                }
+        ],
+        "servidores" : [
+                {
+                        "nombre" : "Servidor1",
+                        "ip" : "10.0.0.6",
+                        "servicios_permitidos" : [
+                                {
+                                        "nombre" : "web",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 80
+                                },
+                                {
+                                        "nombre" : "dns",
+                                        "protocolo" : "udp",
+                                        "puerto" : 53
+                                },
+                                {
+                                        "nombre" : "smtp",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 25
+                                }
+                        ]
+                }
+        ],
+        "alumnos" : [
+                "20206311",
+                "20216464\b\b\b\b\b\b\b\b"
+        ],
+        "profesores" : [
+                "20213333"
+        ]
+}
+{
+        "_id" : ObjectId("6929e12ce2d1898195b848f7"),
+        "codigo" : "IND231",
+        "nombre" : "Ingenieria economica",
+        "estado" : "DICTANDO",
+        "servicios_permitidos" : [
+                {
+                        "nombre" : "web",
+                        "protocolo" : "tcp",
+                        "puerto" : 80
+                },
+                {
+                        "nombre" : "dns",
+                        "protocolo" : "udp",
+                        "puerto" : 53
+                },
+                {
+                        "nombre" : "smtp",
+                        "protocolo" : "tcp",
+                        "puerto" : 25
+                }
+        ],
+        "servidores" : [
+                {
+                        "nombre" : "Servidor1",
+                        "ip" : "10.0.0.6",
+                        "servicios_permitidos" : [
+                                {
+                                        "nombre" : "web",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 80
+                                },
+                                {
+                                        "nombre" : "dns",
+                                        "protocolo" : "udp",
+                                        "puerto" : 53
+                                },
+                                {
+                                        "nombre" : "smtp",
+                                        "protocolo" : "tcp",
+                                        "puerto" : 25
+                                }
+                        ]
+                }
+        ],
+        "alumnos" : [
+                "20206464",
+                "20206311"
+        ],
+        "profesores" : [
+                "20213776"
+        ]
+}
+>
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a5013e"),
+        "nombre" : "Fernando",
+        "apellido" : "Godoy",
+        "codigo" : "20206311",
+        "username" : "20206311",
+        "password" : "dogo",
+        "rol" : "alumno",
+        "estado" : "activo"
+}
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a5013f"),
+        "nombre" : "Sebastian",
+        "apellido" : "Abad",
+        "codigo" : "20206464",
+        "username" : "20206464",
+        "password" : "abad123",
+        "rol" : "alumno",
+        "estado" : "activo"
+}
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a50140"),
+        "nombre" : "Joaquin",
+        "apellido" : "Pozzo",
+        "codigo" : "20213776",
+        "username" : "20213776",
+        "password" : "melinafarfan",
+        "rol" : "profesor",
+        "estado" : "activo"
+}
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a50141"),
+        "nombre" : "Melina",
+        "apellido" : "Farfan",
+        "codigo" : "20213333",
+        "username" : "20213333",
+        "password" : "joaquinpozo",
+        "rol" : "profesor",
+        "estado" : "activo"
+}
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a50142"),
+        "nombre" : "Alumno",
+        "apellido" : "Portal",
+        "codigo" : "20202020",
+        "username" : "20202020",
+        "password" : "123",
+        "rol" : "alumno",
+        "estado" : "activo"
+}
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a50143"),
+        "nombre" : "Admin",
+        "apellido" : "Red",
+        "codigo" : "20217898",
+        "username" : "20217898",
+        "password" : "gol123",
+        "rol" : "administrador_de_red",
+        "estado" : "activo"
+}
+{
+        "_id" : ObjectId("6929ee9ec0bfc82112a50144"),
+        "nombre" : "Nuevo",
+        "apellido" : "Usuario",
+        "codigo" : "20219999",
+        "username" : "20219999",
+        "password" : "clave123",
+        "rol" : "alumno",
+        "estado" : "activo"
+}
+>
+> db.roles.find().pretty()
+{
+        "_id" : ObjectId("6929ee89c0bfc82112a5013a"),
+        "name" : "alumno",
+        "allowed_resources" : [
+                "portal_cautivo",
+                "cursos",
+                "materiales_curso"
+        ],
+        "network_profile" : {
+                "description" : "Alumno con acceso solo a cursos y servicios mínimos",
+                "allowed_services" : [
+                        "dns",
+                        "http_cursos"
+                ],
+                "max_bandwidth_kbps" : 2000
+        }
+}
+{
+        "_id" : ObjectId("6929ee89c0bfc82112a5013b"),
+        "name" : "profesor",
+        "allowed_resources" : [
+                "portal_cautivo",
+                "cursos",
+                "materiales_curso",
+                "herramientas_docente"
+        ],
+        "network_profile" : {
+                "description" : "Profesor con más privilegios que alumno",
+                "allowed_services" : [
+                        "dns",
+                        "http_cursos",
+                        "ssh_campus"
+                ],
+                "max_bandwidth_kbps" : 5000
+        }
+}
+{
+        "_id" : ObjectId("6929ee89c0bfc82112a5013c"),
+        "name" : "personal_administrativo",
+        "allowed_resources" : [
+                "portal_cautivo",
+                "sistemas_administrativos"
+        ],
+        "network_profile" : {
+                "description" : "Personal administrativo con acceso a sistemas internos",
+                "allowed_services" : [
+                        "dns",
+                        "http_admin"
+                ],
+                "max_bandwidth_kbps" : 3000
+        }
+}
+{
+        "_id" : ObjectId("6929ee89c0bfc82112a5013d"),
+        "name" : "administrador_de_red",
+        "allowed_resources" : [
+                "todos"
+        ],
+        "network_profile" : {
+                "description" : "Administrador con acceso completo a la red",
+                "allowed_services" : [
+                        "todos"
+                ],
+                "max_bandwidth_kbps" : 100000
+        }
+}
